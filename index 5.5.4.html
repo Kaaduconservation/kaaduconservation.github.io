@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Kaadu Conservation Trust</title>
     
-	<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-
-
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -48,16 +42,12 @@
         .section-content.active { opacity: 1; transform: translateY(0); display: block; }
 
         .chart-container { position: relative; width: 100%; max-width: 500px; margin: 0 auto; height: 300px; }
-/*
+
         .hero-bg {
             background: linear-gradient(rgba(4, 120, 87, 0.85), rgba(13, 148, 136, 0.85)), 
                         url('https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
         }
-*/
-.hero-bg {
-    background: linear-gradient(rgba(4, 120, 87, 0.85), rgba(13, 148, 136, 0.85)), 
-                url('img/home/showcase.jpg') center/cover no-repeat;
-}
+
         .photo-card:hover { transform: translateY(-4px); box-shadow: 0 15px 30px -10px rgba(0,0,0,0.1); }
         
         /* Centered Modal Fix */
@@ -158,7 +148,7 @@
                         </div>
                     </div>
                     <div class="bg-white p-6 rounded-xl shadow-md">
-                        <h4 class="text-lg font-bold text-center mb-4">Resource Allocation (2025)</h4>
+                        <h4 class="text-lg font-bold text-center mb-4">Resource Allocation (2026)</h4>
                         <div class="chart-container"><canvas id="allocationChart"></canvas></div>
                     </div>
                 </div>
@@ -168,7 +158,7 @@
         <section id="about" class="section-content">
             <div class="container mx-auto px-6 py-10 max-w-6xl">
                 <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col lg:flex-row">
-                  <div class="lg:w-1/2 h-64 lg:h-auto bg-[url('img/home/aboutus.jpg')] bg-cover bg-center"></div>
+                    <div class="lg:w-1/2 h-64 lg:h-auto bg-[url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800')] bg-cover bg-center"></div>
                     <div class="lg:w-1/2 p-8">
                         <h2 class="text-3xl font-serif font-bold text-emerald-800 mb-4">About Us</h2>
                         <h3 class="text-lg font-bold text-stone-800 mb-3 border-b-2 border-amber-500 inline-block">Science Meets Stewardship</h3>
@@ -214,7 +204,7 @@
                     <div class="text-center mb-10"><h1 class="text-3xl md:text-4xl font-serif font-bold text-stone-800 mb-4">Ready to make a difference?</h1><blockquote class="text-lg italic text-emerald-700 bg-emerald-50 py-3 px-6 rounded-lg border-l-4 border-emerald-500 inline-block">"The best time to restore an ecosystem was twenty years ago; the second best time is today."</blockquote></div>
                     <div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row">
                         <div class="bg-emerald-800 text-white p-8 md:w-2/5 flex flex-col justify-between">
-                            <div><h3 class="text-xl font-bold mb-6 text-amber-400">Contact Information</h3><div class="space-y-4 text-sm"><p class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-4"></i><span>Kaadu Conservation Trust HQ<br>123 Forest Avenue, Eco District</span></p><p class="flex items-center"><i class="fas fa-phone mr-4"></i><span>+91 98765 43210</span></p><p class="flex items-center"><i class="fas fa-envelope mr-4"></i><span>contact@kaaduconservation.org</span></p></div></div>
+                            <div><h3 class="text-xl font-bold mb-6 text-amber-400">Contact Information</h3><div class="space-y-4 text-sm"><p class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-4"></i><span>Kaadu Conservation Trust HQ<br>#220/B 54th Cross, Rajajinagar 4th Block, Bangalore North, Bangalore, Karnataka INDIA 560010</span></p><p class="flex items-center"><i class="fas fa-phone mr-4"></i><span>+91 6362112753</span></p><p class="flex items-center"><i class="fas fa-envelope mr-4"></i><span>contact@kaaduconservation.org</span></p></div></div>
                         </div>
                         <div class="p-8 md:w-3/5">
                             <form id="contact-form" onsubmit="event.preventDefault(); alert('Message sent!');">
@@ -251,32 +241,21 @@
     </div>
 
    <footer class="bg-stone-900 text-stone-400 pt-16 pb-8 border-t-4 border-emerald-700 mt-auto">
-        <div class="container mx-auto px-6"><div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12"><div class="md:col-span-2"><a href="#" class="text-2xl font-serif font-bold tracking-tight text-white mb-4 block uppercase"><i class="fas fa-leaf mr-2 text-emerald-500"></i>Kaadu Conservation Trust</a><p class="mb-6 max-w-sm text-sm leading-relaxed">Providing modern, responsive, and scientifically-backed conservation solutions since 2010. Protecting the wild, empowering the people.</p></div><div><h5 class="text-white font-bold uppercase tracking-wider mb-4 text-sm">Quick Links</h5><ul class="space-y-2 text-sm"><li><a href="#" class="hover:text-amber-500 transition-colors" onclick="document.querySelector('[data-target=\'home\']').click()">Home</a></li><li><a href="#" class="hover:text-amber-500 transition-colors" onclick="document.querySelector('[data-target=\'mission\']').click()">Mission</a></li><li><a href="#" class="hover:text-amber-500 transition-colors">Privacy Policy</a></li><li><a href="#" class="hover:text-amber-500 transition-colors">Terms & Conditions</a></li></ul></div><div><h5 class="text-white font-bold uppercase tracking-wider mb-4 text-sm">Connect</h5><div class="flex space-x-4"><a href="#" class="w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center hover:bg-emerald-600 hover:text-white transition-all"><i class="fab fa-facebook-f"></i></a><a href="#" class="w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center hover:bg-emerald-600 hover:text-white transition-all"><i class="fab fa-youtube"></i></a><a href="#" class="w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center hover:bg-emerald-600 hover:text-white transition-all"><i class="fas fa-envelope"></i></a></div></div></div><div class="border-t border-stone-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs"><p>&copy; 2026 Kaadu Conservation Trust. All rights reserved.</p><p class="mt-2 md:mt-0">Designed for Ecological Impact</p></div></div>
+        <div class="container mx-auto px-6"><div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12"><div class="md:col-span-2"><a href="#" class="text-2xl font-serif font-bold tracking-tight text-white mb-4 block uppercase"><i class="fas fa-leaf mr-2 text-emerald-500"></i>Kaadu Conservation Trust</a><p class="mb-6 max-w-sm text-sm leading-relaxed">Providing modern, responsive, and scientifically-backed conservation solutions. Protecting the wild, empowering the people.</p></div><div><h5 class="text-white font-bold uppercase tracking-wider mb-4 text-sm">Quick Links</h5><ul class="space-y-2 text-sm"><li><a href="#" class="hover:text-amber-500 transition-colors" onclick="document.querySelector('[data-target=\'home\']').click()">Home</a></li><li><a href="#" class="hover:text-amber-500 transition-colors" onclick="document.querySelector('[data-target=\'mission\']').click()">Mission</a></li><li><a href="#" class="hover:text-amber-500 transition-colors">Privacy Policy</a></li><li><a href="#" class="hover:text-amber-500 transition-colors">Terms & Conditions</a></li></ul></div><div><h5 class="text-white font-bold uppercase tracking-wider mb-4 text-sm">Connect</h5><div class="flex space-x-4"><a href="#" class="w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center hover:bg-emerald-600 hover:text-white transition-all"><i class="fab fa-facebook-f"></i></a><a href="#" class="w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center hover:bg-emerald-600 hover:text-white transition-all"><i class="fab fa-youtube"></i></a><a href="#" class="w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center hover:bg-emerald-600 hover:text-white transition-all"><i class="fas fa-envelope"></i></a></div></div></div><div class="border-t border-stone-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs"><p>&copy; 2026 Kaadu Conservation Trust. All rights reserved.</p><p class="mt-2 md:mt-0">Designed for Ecological Impact</p></div></div>
     </footer>
 
     <script>
         const galleryItems = [
-            { id:1, title:"Dense Evergreen Forest", shortDesc:"Old-growth forest protected by community", extended:"Spanning over 200 acres, this forest is a carbon sink and habitat for Malabar civet. Annual biodiversity surveys conducted.", imgSrc:"img/aaaa_1_converted.avif", category:"Forest" },
-            { id:2, title:"Native Tree Nursery", shortDesc:"Growing 15+ endemic species", extended:"Our nursery produces saplings of rosewood, mahogany, and fruit-bearing trees for reforestation. Over 25k saplings distributed to farmers.", imgSrc:"img/bbbb_2_converted.avif", category:"Nursery" },
-            { id:3, title:"Managed Conservation Area", shortDesc:"Eco-restoration zone under scientific monitoring", extended:"Strict protection & seasonal grazing control. Fire lines and invasive species removal increased native grass cover by 40% in 2 years.", imgSrc:"img/bbbb_converted.avif", category:"Managed Area" },
-            { id:4, title:"Private Forest Stewardship", shortDesc:"Partnering with landowners", extended:"Over 30 private landowners adopted sustainable forestry. Incentive program for maintaining native canopy and water bodies.", imgSrc:"img/DSC00641_converted.avif", category:"Private Forest" },
-            { id:5, title:"Majestic Riverine Ecosystem", shortDesc:"Restoring riparian corridors", extended:"Reforestation along river banks reduced erosion and improved water quality. Sightings of smooth-coated otters increased.", imgSrc:"img/DSC01868_converted.avif", category:"River" },
-            { id:6, title:"Flourishing Fruit Forest", shortDesc:"Agroforestry & food security", extended:"Mixed orchards of mango, jamun, and amla providing nutrition and income to local families while integrating native understory.", imgSrc:"img/DSC01877_converted.avif", category:"Fruit Form" },
-            { id:7, title:"Innovative Planting System", shortDesc:"Miyawaki & assisted natural regeneration", extended:"Dense multilayer plantation technique achieving rapid canopy closure. 85% survival rate after 18 months.", imgSrc:"img/DSC02074_converted.avif", category:"Planting System" },
-            { id:8, title:"Towering Ancient Trees", shortDesc:"Preserving flagship giants", extended:"Inventory of 200+ year-old trees with protection zones. Cultural heritage documentation.", imgSrc:"img/DSC02089_converted.avif", category:"Trees" },
-            { id:9, title:"Verdant Nature Trails", shortDesc:"Ecotourism & interpretation", extended:"Guided walks raise awareness and generate funds. 5km trail with signage on flora and fauna.", imgSrc:"img/DSC03865_converted.avif", category:"Nature" },
-            { id:10, title:"Community Managed Nursery", shortDesc:"Women-led seedling production", extended:"Empowering self-help groups, generating livelihood and restoring native groves.", imgSrc:"img/DSC06110_converted.avif", category:"Nursery" },
-            { id:11, title:"Community Managed Nursery", shortDesc:"Women-led seedling production", extended:"Empowering self-help groups, generating livelihood and restoring native groves.", imgSrc:"img/DSC06322_converted.avif", category:"Nursery" },
-            { id:12, title:"Community Managed Nursery", shortDesc:"Women-led seedling production", extended:"Empowering self-help groups, generating livelihood and restoring native groves.", imgSrc:"img/DSC09229_converted.avif", category:"Nursery" },
-            { id:13, title:"Community Managed Nursery", shortDesc:"Women-led seedling production", extended:"Empowering self-help groups, generating livelihood and restoring native groves.", imgSrc:"img/DSC09549_converted.avif", category:"Nursery" },
-            { id:14, title:"Community Managed Nursery", shortDesc:"Women-led seedling production", extended:"Empowering self-help groups, generating livelihood and restoring native groves.", imgSrc:"img/Hopea ponga (Dennst.) Mabb._converted.avif", category:"Nursery" },
-            { id:15, title:"Community Managed Nursery", shortDesc:"Women-led seedling production", extended:"Empowering self-help groups, generating livelihood and restoring native groves.", imgSrc:"img/Knema attenuata_converted.avif", category:"Nursery" },
-            { id:16, title:"Community Managed Nursery", shortDesc:"Women-led seedling production", extended:"Empowering self-help groups, generating livelihood and restoring native groves.", imgSrc:"img/Memecylon sisparense Gamble_converted.avif", category:"Nursery" },
-            { id:17, title:"Community Managed Nursery", shortDesc:"Women-led seedling production", extended:"Empowering self-help groups, generating livelihood and restoring native groves.", imgSrc:"img/Impatiens jerdoniae -_converted.avif", category:"Nursery" },
-            { id:18, title:"Community Managed Nursery", shortDesc:"Women-led seedling production", extended:"Empowering self-help groups, generating livelihood and restoring native groves.", imgSrc:"img/DSC02084_converted.avif", category:"Nursery" },
-            { id:19, title:"Community Managed Nursery", shortDesc:"Women-led seedling production", extended:"Empowering self-help groups, generating livelihood and restoring native groves.", imgSrc:"img/aaaa_2_converted.avif", category:"Nursery" },
-            { id:20, title:"Community Managed Nursery", shortDesc:"Women-led seedling production", extended:"Empowering self-help groups, generating livelihood and restoring native groves.", imgSrc:"img/DSC09138_converted.avif", category:"Nursery" },
-            { id:21, title:"Community Managed Nursery", shortDesc:"Women-led seedling production", extended:"Empowering self-help groups, generating livelihood and restoring native groves.", imgSrc:"img/DSC03865_converted.avif", category:"Nursery" }
+            { id:1, title:"Dense Evergreen Forest", shortDesc:"Old-growth forest protected by community", extended:"Spanning over 200 acres, this forest is a carbon sink and habitat for Malabar civet. Annual biodiversity surveys conducted.", imgSrc:"https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&auto=format", category:"Forest" },
+            { id:2, title:"Native Tree Nursery", shortDesc:"Growing 15+ endemic species", extended:"Our nursery produces saplings of rosewood, mahogany, and fruit-bearing trees for reforestation. Over 25k saplings distributed to farmers.", imgSrc:"https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?w=800&auto=format", category:"Nursery" },
+            { id:3, title:"Managed Conservation Area", shortDesc:"Eco-restoration zone under scientific monitoring", extended:"Strict protection & seasonal grazing control. Fire lines and invasive species removal increased native grass cover by 40% in 2 years.", imgSrc:"https://ix-marketing.imgix.net/bg-remove_after.png?auto=format,compress&w=800", category:"Managed Area" },
+            { id:4, title:"Private Forest Stewardship", shortDesc:"Partnering with landowners", extended:"Over 30 private landowners adopted sustainable forestry. Incentive program for maintaining native canopy and water bodies.", imgSrc:"https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=800&auto=format", category:"Private Forest" },
+            { id:5, title:"Majestic Riverine Ecosystem", shortDesc:"Restoring riparian corridors", extended:"Reforestation along river banks reduced erosion and improved water quality. Sightings of smooth-coated otters increased.", imgSrc:"https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&auto=format", category:"River" },
+            { id:6, title:"Flourishing Fruit Forest", shortDesc:"Agroforestry & food security", extended:"Mixed orchards of mango, jamun, and amla providing nutrition and income to local families while integrating native understory.", imgSrc:"https://ix-marketing.imgix.net/key-features_cdn.png?w=800&auto=format", category:"Fruit Form" },
+            { id:7, title:"Innovative Planting System", shortDesc:"Miyawaki & assisted natural regeneration", extended:"Dense multilayer plantation technique achieving rapid canopy closure. 85% survival rate after 18 months.", imgSrc:"https://ix-marketing.imgix.net/how-it-works_design_auto-enhance2.png?w=800&auto=format", category:"Planting System" },
+            { id:8, title:"Towering Ancient Trees", shortDesc:"Preserving flagship giants", extended:"Inventory of 200+ year-old trees with protection zones. Cultural heritage documentation.", imgSrc:"https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=800&auto=format", category:"Trees" },
+            { id:9, title:"Verdant Nature Trails", shortDesc:"Ecotourism & interpretation", extended:"Guided walks raise awareness and generate funds. 5km trail with signage on flora and fauna.", imgSrc:"https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&auto=format", category:"Nature" },
+            { id:10, title:"Community Managed Nursery", shortDesc:"Women-led seedling production", extended:"Empowering self-help groups, generating livelihood and restoring native groves.", imgSrc:"https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800&auto=format", category:"Nursery" }
         ];
 
         // Carousel variables
@@ -291,7 +270,7 @@
             container.innerHTML = '';
             dotsContainer.innerHTML = '';
 
-            const carouselItems = galleryItems.slice(0, 21);
+            const carouselItems = galleryItems.slice(0, 6);
             carouselItems.forEach((item, idx) => {
                 const slideDiv = document.createElement('div');
                 slideDiv.className = `carousel-slide absolute inset-0 transition-opacity duration-700 ease-in-out ${idx === currentSlide ? 'opacity-100 z-10' : 'opacity-0 z-0'}`;
