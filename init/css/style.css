@@ -1,0 +1,39 @@
+/* Reset and Base Styles */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body, html { height: 100%; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+.hero-bg {
+    /* Using your local path - ensure this matches your directory structure */
+    background: linear-gradient(rgba(4, 120, 87, 0.85), rgba(13, 148, 136, 0.85)), 
+                url('../img/home/DSC05148_converted.avif') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.contact-info {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 25px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 600px) {
+    .hero-content h1 { font-size: 2rem; }
+}
